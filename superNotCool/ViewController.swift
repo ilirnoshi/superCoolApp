@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var firstLogo: UIImageView!
+    @IBOutlet weak var firstBg: UIImageView!
+    @IBOutlet weak var theButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +23,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func theCoolStuff(sender: AnyObject) {
+        firstLogo.hidden = false
+        firstBg.hidden = false
+        theButton.hidden = true
+    }
 
 }
 
